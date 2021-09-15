@@ -1,0 +1,320 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url('./images/pozadi.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: fantasy;
+}
+.fantazie{
+    font-family: fantasy;
+    font-size: 28px;
+}
+.hov:hover{
+    cursor: pointer;
+}
+.leva{
+    margin-left: 12%;
+}
+.logo{
+    text-align: center;
+    padding-top: 15px;
+}
+.text{
+    font-size: 20px;
+    text-align: center;
+}
+header{
+    display: inline-block;
+    width: 100%;
+    background-color: black;
+    margin: 0;
+}
+.bar{
+    position: relative;
+    background-color:black;
+    min-height: 70px;
+}
+.sb, .hl, .steam, .discord img{
+    -webkit-transition:all 0.3s ease-in-out;
+    -moz-transition:all 0.3s ease-in-out;
+    -o-transition:all 0.3s ease-in-out;
+    transition:all 0.3s ease-in-out;
+}
+.sb, .hl, .steam {
+    width: 20%;
+    height: auto;
+    float: left;
+    padding-left: 10%;
+    margin-top: 15px;
+}
+.sb:hover, .hl:hover, .steam:hover{
+    width: 25%;
+    height: auto;
+    margin-top: 0px;
+    padding-left: 8%;
+    cursor: pointer;
+    /* margin: 2px; */
+}
+.hl:hover + .steam{
+    padding-left: 7%;
+}
+.sb:hover + .hl{
+    padding-left: 7%;
+}
+.discord img:hover{
+    width: 70%;
+    padding-top: 0px;
+    cursor: pointer;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.808);
+    max-height: 170px;
+    /* padding-top: 5px; */
+}
+.csko{
+    color: white;
+    margin: 5px;
+    border: 5px solid;
+    border-color: black;
+    border-radius: 25px;
+    font-size: 22px;
+    /* margin-top:25px; */
+}
+.ah{
+    margin: 5px;
+    color: rgb(220, 83, 3);
+    font-size: 30px;
+}
+.edit{margin: 6px; max-width: 400x;}
+.edit2, .edit3{
+    margin: 6px;
+    text-align: center;
+}
+.edit2{
+    /* max-width: 225px; */
+    color: white;
+    text-decoration: none;
+    max-width: 250px;
+    margin-right: 7%;
+}
+.edit2:hover{
+    color: gray;
+}
+.edit3{
+    max-width: 150px;
+}
+.edit4{
+    margin: 6px;
+}
+.leva{
+    padding-right: calc(var(--bs-gutter-x) / 2);
+    padding-left: calc(var(--bs-gutter-x) / 2);
+}
+.join{
+    text-align: center;
+    border: 2px solid;
+    margin: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.join:hover{
+    color: black;
+    background-color: rgb(220, 83, 3);
+}
+.join1{
+    text-align: center;
+    border: 2px solid;
+    margin: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.join1:hover{
+    color: black;
+    background-color: rgb(220, 83, 3);
+}
+.discord{
+    border: 5px solid;
+    border-color: black;
+    border-radius: 25px;
+    text-align: center;
+    padding: 0px;
+    max-height: 225px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height:170px;
+}
+.discord img{
+    padding-top: 6px;
+}
+.ripMarg{
+    margin: 0;
+    text-align: left;
+}
+.veci{
+    border: 5px solid;
+    border-color: black;
+    border-radius: 25px;
+    padding: 0px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    height:170px;
+}
+.obr{
+    margin-top: 22px;
+}
+.obr2{
+    float: left;
+    margin-top: 4px;
+    margin-right: 10px;
+}
+.obr3{
+    float: right;
+    margin-top: 2px;
+}
+.obrazek{
+    margin-top: 10px; 
+    border-radius: 50%;
+    border: rgb(220, 83, 3) solid;
+}
+.tlacitko{
+    margin: 50px;
+    padding: 20px;
+    font-size: larger;
+}
+.button{
+    z-index: 2;
+    position: relative;
+    display:block;
+    background: transparent;
+    width:170px;
+    height:30px;
+    line-height:42px;
+    text-align:center;
+    font-size:25px;
+    text-decoration:none;
+    text-transform:uppercase;
+    margin:10px auto;
+    margin-left: 1px;
+    margin-right: 1px;
+}
+.button:before, .button:after {
+    width:160px;
+    left: 0px;
+    height:18px;
+    z-index: -1;
+}
+.violet{ color: #FF7C05; }
+
+.violet:before,.violet:after {
+    border: 4px solid #FF7C05;
+}
+
+.button:before{
+  position: absolute;
+  content: '';
+  border-bottom: none;
+  -webkit-transform: perspective(15px) rotateX(5deg);
+  -moz-transform: perspective(15px) rotateX(5deg);
+  transform: perspective(15px) rotateX(5deg);  
+}
+.button:after{
+  position: absolute;
+  top: 23px;
+  content: '';
+  border-top: none;
+  -webkit-transform: perspective(15px) rotateX(-5deg);
+  -moz-transform: perspective(15px) rotateX(-5deg);
+  transform: perspective(15px) rotateX(-5deg);
+}
+
+/* Button Hover Style */
+.violet:hover:before, .violet:hover:after {
+    background-color: #FF7C05;
+}
+
+.button:hover{
+    color:#fff;
+}
+.tvojemama{
+    max-width: 210px;
+    margin: auto;
+}
+.tvojemama2{
+    width: fit-content;
+    margin: auto;
+}
+.pozadi{
+    border: #FF7C05 solid;
+    border-width: 0.5px;
+    background-color: rgba(0, 0, 0, 0.507);
+    height: 100%;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    margin-top: 20px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.nadpis{
+    font-size: 35px;
+    color:  #FF7C05;
+    margin-bottom: 10px;
+}
+.vip{
+    color: white;
+
+}
+.ceny{
+    text-align: center;
+    border: #FF7C05 solid;
+    border-width: 0.5px;
+    background-color: rgba(0, 0, 0, 0.507);
+    color: white;
+    margin-left: 20px;
+    padding-bottom: 12px;
+    margin-bottom: 25px;
+}
+ul{
+    list-style-type: none;
+}
+.icon{
+    max-width: 150px;
+}
+.txt{
+    color: white;
+    margin-top: 5px;
+}
+.odkazy{
+    text-decoration: none;
+    display: inline-block;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+.fab{
+    color:white;
+}
+.marginPravo{
+    margin-right: 5px;
+}
+
+.prava{
+    float: right;
+}
